@@ -44,6 +44,10 @@ PUT /users/{id:[0-9]+} - Update the user data
 <h3> Set enviroment variable </h4>
 
 ```
+sudo docker run --name=users -p 5432:5432 -e POSTGRES_PASSWORD=55555 -d postgres:16.2
+```
+
+```
 addr = ":your free port"
 DB = "postgres://postgres:55555@localhost:5432/postgres?sslmode=disable"
 ```
