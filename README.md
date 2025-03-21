@@ -14,6 +14,7 @@ Body request
     "email: ..., (string)
     "phone":..., (string)
 }
+
 ```
 
 ```
@@ -25,6 +26,7 @@ PUT /users/{id:[0-9]+} - Update the user data
 ```
 
 <p>Body request</p>
+
 ```
 {
     "name" : ..., (string)
