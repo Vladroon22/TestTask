@@ -1,5 +1,5 @@
 services:
-  cvmake:
+  app:
     build: ./
     ports:
       - "8080:8080"
@@ -8,10 +8,10 @@ services:
 
   postgres:
     image: postgres:16.2
-    container_name: CV
+    container_name: users
     environment:
       POSTGRES_PASSWORD: 55555
-      POSTGRES_DB: CV
+      POSTGRES_DB: users
     ports:
       - "5432:5432"
     volumes:

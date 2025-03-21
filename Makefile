@@ -12,4 +12,4 @@ compose-stop:
 
 compose-delete:
 	sudo docker compose down -v
-	sudo docker rmi cvmaker-cvmake
+	sudo docker rmi testtask-app
