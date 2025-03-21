@@ -1,5 +1,9 @@
 .PHONY:
 
+tests:
+	go test ./internal/utils
+	go test ./internal/service
+
 run:
 	go build -o ./app cmd/main.go
 	./app

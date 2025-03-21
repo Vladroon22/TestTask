@@ -3,8 +3,9 @@
 <h2> API Endpoints </h2>
 
 ```
-POST /users create new user
+POST /users  - create new user
 ```
+
 Body request
 ```
 {
