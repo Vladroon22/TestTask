@@ -1,0 +1,21 @@
+services:
+  cvmake:
+    build: ./
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16.2
+    container_name: CV
+    environment:
+      POSTGRES_PASSWORD: 55555
+      POSTGRES_DB: CV
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
